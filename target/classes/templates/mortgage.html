@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mortgage App</title>
+</head>
+<body>
+<h1>Mortgage Application</h1>
+<p>Upload your prospect file and I'll do the calculations</p>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" value="Upload" />
+</form>
+<div th:if="${not #strings.isEmpty(content)}">
+    <h4>Calculations performed:</h4>
+    <pre th:text="${content}"></pre>
+</div>
+</body>
+</html>
