@@ -1,5 +1,11 @@
 ## Mortgage Application
 
+#### Tools needed
+- Java 17
+- Maven 3.9.0 
+- Docker Desktop 
+
+
 ### How to start the app locally
 - Running the app with docker: 
   - Open your Docker Desktop
