@@ -8,7 +8,7 @@ To successfully build and run the application:
 
 
 ### How to start the app locally
-- Running the app with socker: 
+- Running the app with Docker: 
   - Open your Docker Desktop
   
 Navigate to the root directory of the project 
