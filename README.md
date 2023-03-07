@@ -1,7 +1,6 @@
 ## Mortgage Application
 
-### Tools needed
-To successfully build and run the application: 
+### Tools needed to successfully build and run the application
 - Java 17
 - Maven 3.9.0 
 - Docker Desktop 
