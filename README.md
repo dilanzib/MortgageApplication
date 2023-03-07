@@ -1,19 +1,22 @@
 ## Mortgage Application
 
-#### Tools needed
+### Tools needed
+To successfully build and run the application: 
 - Java 17
 - Maven 3.9.0 
 - Docker Desktop 
 
 
 ### How to start the app locally
-- Running the app with docker: 
+- Running the app with socker: 
   - Open your Docker Desktop
-  - Run the command 
+  
+Navigate to the root directory of the project 
+  - Build the application by running: 
     -      mvn clean package
-  - Build the application with docker
+  - Build a Docker image of the app:
     -      docker build -t mortgage-app .
-  - Run the docker 
+  - Run the Docker 
     -     docker run -p 8080:8080 mortgage-app
 
 Check the webpage at:
@@ -22,7 +25,7 @@ http://localhost:8080/mortgage
 ------------------------------------------------------------
 
 
-  - Running the app without docker, only Spring Boot: 
+  - Running the app without Docker and only Spring Boot: 
     -     java -jar target/mortgage-0.0.1-SNAPSHOT.jar
 
 Check the webpage at:
