@@ -18,12 +18,6 @@ public class MortgageApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MortgageApplication.class, args);
-        List<Customer> customers = readProspectsFile(PROSPECTS_FILE);
-        for (int i = 0; i < customers.size(); i++) {
-            Customer customer = customers.get(i);
-            double monthlyPayment = calculateMonthlyPayment(customer.getTotalLoan(), customer.getInterest(), customer.getYears());
-            String formattedName = formatName(customer.getName());
-        }
     }
 
     public static List<Customer> readProspectsFile(String prospectsFile) {
